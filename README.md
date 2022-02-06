@@ -40,3 +40,12 @@ query {
   }
 }
 ```
+
+### To Run it using docker
+- create a virtual environment in the root directory
+- install docker
+- build with the local.yml using
+  `docker-compose -f local.yml build`
+- create and run the container using
+  `docker-compose -f local.yml up`
+- Open `http://0.0.0.0:8000/graphql` in your browser
