@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 3rd party
+    'storages',
+
     # local
     'assessment',
 ]
@@ -126,3 +129,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Configure Django to store images on AWS S3 buckets
+AWS_QUERYSTRING_AUTH = False
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_S3_ACCESS_KEY_ID = 'AKIAWNXBAZX2AWD6VZV6'
+AWS_S3_SECRET_ACCESS_KEY = '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'
+
+AWS_STORAGE_BUCKET_NAME = 'photoshare-acel'
