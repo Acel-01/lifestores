@@ -10,7 +10,7 @@ Developer assessment test for Lifestores
   ### On windows
   - Run `pip install -r requirements.txt` for python 2.x
   - Run `pip3 install -r requirements.txt` for python 3.x
-- Follow the instruction here to manually fix a bug for Graphene and Django 4.0+
+- Follow the instructions here to manually fix a bug for Graphene and Django 4.0+
   `https://stackoverflow.com/questions/70382084/import-error-force-text-from-django-utils-encoding`
 - Set up environment Variables
   - Create a .env file with `touch .env`
@@ -25,3 +25,18 @@ Developer assessment test for Lifestores
     ```
 - Start the local server with `python manage.py runserver`
 - Open `http://127.0.0.1:8000/graphql` in your browser
+
+# Example
+To query a list of products
+```
+query {
+  allProducts {
+    id
+    name
+    description
+    sku
+    price
+    image
+  }
+}
+```
