@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
     # 3rd party
     'storages',
-    "graphene_django"
+    "graphene_django",
 
     # local
     'assessment',
@@ -142,5 +142,5 @@ AWS_STORAGE_BUCKET_NAME = 'photoshare-acel'
 
 # Graphene Configurations
 GRAPHENE = {
-    "SCHEMA": "django_root.schema.schema"
+    "SCHEMA": "lifestores.schema.schema"
 }
