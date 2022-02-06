@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
     # 3rd party
     'storages',
+    "graphene_django"
 
     # local
     'assessment',
@@ -138,3 +139,8 @@ AWS_S3_ACCESS_KEY_ID = 'AKIAWNXBAZX2AWD6VZV6'
 AWS_S3_SECRET_ACCESS_KEY = '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'
 
 AWS_STORAGE_BUCKET_NAME = 'photoshare-acel'
+
+# Graphene Configurations
+GRAPHENE = {
+    "SCHEMA": "django_root.schema.schema"
+}
