@@ -10,6 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import django
+from django.utils.encoding import force_str
+django.utils.encoding.force_text = force_str
+
 from pathlib import Path
 from environs import Env
 env = Env() 
@@ -28,7 +32,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','0.0.0.0']
 
 
 
