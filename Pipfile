@@ -8,6 +8,7 @@ django = "==4.0.2"
 graphene-django = "==2.15.0"
 environs = "~=8.0.0"
 dj-database-url = "*"
+pillow = "*"
 
 [dev-packages]
 
